@@ -1,0 +1,1 @@
+SC.TEMPLATES["todos"] = SC.Handlebars.compile("<h1>Welcome to SproutCore!</h1>\n{{#view Todos.CreateTodoView}}\n<input id=\"new-todo\" type=\"text\"\n       placeholder=\"What needs to be done?\" >\n{{/view}}\n\n{{#collection SC.TemplateCollectionView\ncontentBinding=\"Todos.todoListController\"}}\n    {{content.title}}\n{{/collection}}\n");
